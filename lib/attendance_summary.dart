@@ -1,5 +1,4 @@
 import 'package:attendance_summery_flutter/screens/attendance_screen.dart';
-import 'package:attendance_summery_flutter/screens/summary_screen.dart';
 import 'package:attendance_summery_flutter/student_list_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

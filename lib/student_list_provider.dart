@@ -32,6 +32,7 @@ class StudentListProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+
   void resetAttendance() {
     for (int i = 0; i < _students.length; i++) {
       _students[i] = Student(_students[i].id, _students[i].name, false);
