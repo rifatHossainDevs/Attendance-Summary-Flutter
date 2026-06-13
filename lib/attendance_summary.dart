@@ -10,11 +10,13 @@ class AttendanceSummary extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context)=> StudentListProvider(),
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: AttendanceScreen(),
-        theme: ThemeData(
-          scaffoldBackgroundColor: Color(0xFFEAF1F7)
+      child: SafeArea(
+        child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: AttendanceScreen(),
+          theme: ThemeData(
+            scaffoldBackgroundColor: Color(0xFFEAF1F7)
+          ),
         ),
       ),
     );
