@@ -15,7 +15,7 @@ class SummaryScreen extends StatefulWidget {
 class _SummaryScreenState extends State<SummaryScreen> {
   @override
   Widget build(BuildContext context) {
-    late final provider = context.watch<StudentListProvider>();
+    final provider = context.watch<StudentListProvider>();
 
     int totalPresent = provider.presentStudent.length;
     int totalAbsent = provider.absentStudent.length;
